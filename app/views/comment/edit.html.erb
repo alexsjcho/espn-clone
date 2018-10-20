@@ -1,5 +1,5 @@
-<%= simple_form_for ([@message, @message.comments.build]) do |f| %>
+<h1>Edit Comment</h1>
+<%= simple_form_for ([@message, @comment]) do |f| %>
   <%= f.input :content, label: "Comments" %>
-  <%= f.input :description %>
   <%= f.button :submit, :class => 'btn-custom'%>
 <% end %>
